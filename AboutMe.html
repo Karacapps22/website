@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+/*
+*/
+.w3-bar .w3-button {
+  padding: 5px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">HOME</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="AboutMe.html" class="w3-bar-item w3-button">ABOUT ME</a>
+      <a href="Portfolio.html" class="w3-bar-item w3-button"></i> PORTFOLIO</a>
+      <a href="TechQual.html" class="w3-bar-item w3-button"></i> QUALIFICATIONS</a>
+      <a href="Service.html" class="w3-bar-item w3-button"></i> SERVICE</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="AboutMe.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
+  <a href="Portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
+  <a href="TechQual.html" onclick="w3_close()" class="w3-bar-item w3-button">QUALIFICATIONS</a>
+  <a href="Service.html" onclick="w3_close()" class="w3-bar-item w3-button">SERVICE</a>
+  <a href="Secret.html" onclick="w3_close()" class="w3-bar-item w3-button">SECRET</a>
+</nav>
+
+<div class="w3-container" style="padding:128px 16px" id="about">
+      <p class="w3-center w3-large w3-text-grey" > The best way to predict the future is to create it
+      - <em>Pete Drucker</em>  </p>
+      <p class="w3-center w3-text-white"> - </p>
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center w3-large">Hi there and welcome to my webpage! My name is Kara Capps and I am an undergraduate Computer Science student at Texas A&M University with an interest in AI and Software Development. I majored in Computer Science because it is challenging and intriguing. I believe we can do anything that we put our minds to. </p>
+  <p class="w3-center w3-large"> In addition to my studies, I am an amateur latte artist and own a cat who keeps me company during quarantine!<br>
+
+      <img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/118804310_1505524422964066_6712546642346112761_o.jpg?_nc_cat=110&_nc_sid=730e14&_nc_ohc=QGq9LzPjoVQAX94wxsa&_nc_ht=scontent-dfw5-1.xx&oh=d4b7a9f1b18105b76766fb3d36a33fb8&oe=5F74DED5" class="rounded" width="316" height ="236" alt="GHC">
+  </div>
+
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <p> I am part of <a class href="https://www.awics.org">AWICS</a></dd> (Aggie Women in Computer Science) and am attending the <a class href="https://ghc.anitab.org">Grace Hopper Conference</a></dd> for the second time at the end of September (this time virtually!)</p>
+    </div>
+    
+    <div class="w3-col m1">
+        <img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/118793892_1505497672966741_3140212235375988217_o.jpg?_nc_cat=100&_nc_sid=730e14&_nc_ohc=M0cakLKMLiUAX81fOy7&_nc_ht=scontent-dfw5-2.xx&oh=22c2146738b7ec163c02410a35a5c253&oe=5F770CE3" class="rounded" width="177" height ="237" alt="GHC">
+    </div>
+
+  </div>
+</div>
+
+</body>
+
+<footer class="w3-left w3-white w3-padding-64">
+  <p>Powered by <br><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-left w3-hover-text-green">w3.css</a>
+  </p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

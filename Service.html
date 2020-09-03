@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+/*
+*/
+.w3-bar .w3-button {
+  padding: 5px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">HOME</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="AboutMe.html" class="w3-bar-item w3-button">ABOUT ME</a>
+      <a href="Portfolio.html" class="w3-bar-item w3-button"></i> PORTFOLIO</a>
+      <a href="TechQual.html" class="w3-bar-item w3-button"></i> QUALIFICATIONS</a>
+      <a href="Service.html" class="w3-bar-item w3-button"></i> SERVICE</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="AboutMe.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
+  <a href="Portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
+  <a href="TechQual.html" onclick="w3_close()" class="w3-bar-item w3-button">QUALIFICATIONS</a>
+  <a href="Service.html" onclick="w3_close()" class="w3-bar-item w3-button">SERVICE</a>
+  <a href="Secret.html" onclick="w3_close()" class="w3-bar-item w3-button">SECRET</a>
+</nav>
+
+<div class="w3-container w3-light-grey" style="padding:64px" id="team">
+  <h3 class="w3-center">Service</h3>
+  
+  <div class="w3-container" style="padding:16px 16px" id="team">
+  <div class=" w3-white" style="margin-top:64px">
+      <div class="w3-card">
+        <div class="w3-container">
+          <h3>Things I want to do</h3>
+          <p>
+              <dl>
+                <dt>• Encourage Computer Science and Engineering in schools (virtually and in person!)</dt>
+                <dd>- Many students in highschool and middle school aren't given the opportunity to learn about Computer Science and Engineering, and even if they are, they may not choose to pursue it because they don't know enough about it or think they won't do well.</dd>
+                <dd>- A study by Google showed that students who are told that they would be good at Computer Science are 2.5 to 3 times more likely to be interested in it. Additionally, Google’s research reports that students who have high self confidence in their ability to learn computer science are nearly four times more interested in learning computer science. </dd>
+                <dd>- By encouraging younger students and being role models, we can give them the opportunity to pursue Computer Science and Engineering. If we are able to influence the younger generation to puruse Computer Science and Engineering as a passion, the world of technology will have the potential to gain more smart and passionate minds.
+              </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="work">
+    <p>sources:
+    <br> <a class href="https://services.google.com/fh/files/misc/encouraging-students-toward-computer-science-learning-brief.pdf">Google study</a></dd></p>
+
+<footer class="w3-left w3-light-grey w3-padding-64">
+  <p>Powered by <br><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-left w3-hover-text-green">w3.css</a>
+  </p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

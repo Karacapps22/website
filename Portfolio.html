@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+/*
+*/
+.w3-bar .w3-button {
+  padding: 5px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">HOME</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="AboutMe.html" class="w3-bar-item w3-button">ABOUT ME</a>
+      <a href="Portfolio.html" class="w3-bar-item w3-button"></i> PORTFOLIO</a>
+      <a href="TechQual.html" class="w3-bar-item w3-button"></i> QUALIFICATIONS</a>
+      <a href="Service.html" class="w3-bar-item w3-button"></i> SERVICE</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="AboutMe.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
+  <a href="Portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
+  <a href="TechQual.html" onclick="w3_close()" class="w3-bar-item w3-button">QUALIFICATIONS</a>
+  <a href="Service.html" onclick="w3_close()" class="w3-bar-item w3-button">SERVICE</a>
+  <a href="Secret.html" onclick="w3_close()" class="w3-bar-item w3-button">SECRET</a>
+</nav>
+
+<div class="w3-container w3-light-grey" style="padding:64px" id="team">
+  <h3 class="w3-center">Portfolio</h3>
+  <div class="w3-container" style="padding:16px 16px" id="team">
+  <div class=" w3-white w3-col l3 m6" style="margin-top:64px">
+      <div class="w3-card">
+        <div class="w3-container">
+          <p>View my <a class href="https://github.com/Karacapps22">GitHub</a></dd> and <a class href="https://www.linkedin.com/in/kara-capps-10099616b/">LinkedIn</a></dd>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="w3-container" style="padding:16px 16px" id="team">
+  <div class=" w3-white" style="margin-top:64px">
+      <div class="w3-card">
+        <div class="w3-container">
+          <h3>Things I have done</h3>
+          <p>
+              <dl>
+                <dt>• Buddy System Memory Allocator</dt>
+                <dd>- Implemented a memory manager that will efficiently allocate memory by splitting available
+                storage into blocks with power of two sizes in C++</dd>
+                <dd>- See code <a class href="https://github.com/Karacapps22/BuddyMemoryAllocator">here</a></dd>
+                <dt>• Hack Computer System</dt>
+                <dd>- Constructed an elementary HACK computer system via building an assembler in Python </dd>
+                <dd>- Designed all necessary chips to implement CPU and storage in HDL and HACK assembly</dd>
+                <dt>• Autonomous Underwater Vehicle Project</dt>
+                <dd>- Lead a cross-disciplinary team in A&M's Women in Engineering's project team, <a class href="https://github.com/Karacapps22/BuddyMemoryAllocator">WE AUV</a> by delegating responsibilities and leading communications to ensure timelines were met</dd>
+                <dd>- Learned and researched Python and OpenCV to help infrastructure the stereo vision system</dd>
+              </dl>
+              <h3>In Progress</h3>
+              <p>
+                <dl>
+                <dt>• Multiplayer FPS Game</dt>
+                    <dd>- Using Unity IDE in order to construct a 3D Multiplayer FPS Game in preparation for a Fall Unity Developer Internship at <a class href="https://www.netedgevr.com">NetEdgeVR</a></dd>
+                </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-row w3-center w3-white w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">1</span>
+    <br>something
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">2</span>
+    <br>Projects something else
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">3</span>
+    <br>3rd thing
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">4</span>
+    <br>4th thing
+  </div>
+</div>
+
+</body>
+
+<footer class="w3-left w3-white w3-padding-64">
+  <p>Powered by <br><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-left w3-hover-text-green">w3.css</a>
+  </p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
